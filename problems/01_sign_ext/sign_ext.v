@@ -4,9 +4,6 @@ module sign_ext(
     output [31:0]ext_imm
 );
 
-/*
-*   Problem 4:
-*   Describe sign extension logic.
-*/
+assign ext_imm = {{20{imm[11]}}, imm};
 
 endmodule
